@@ -15,7 +15,6 @@ public class ReservaService {
     private final RabbitTemplate rabbitTemplate;
     private final ReservaMapper mapper;
 
-    @Transactional
     public ReservaDto solicitarReserva(NewReservaDto dto) {
         Reserva reserva = mapper.toEntity(dto);
         reserva.setStatus(Status.PENDENTE);
