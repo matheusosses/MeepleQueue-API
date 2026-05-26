@@ -1,13 +1,13 @@
 package com.matheusosses.worker_reservas;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import static org.assertj.core.api.Assertions.assertThat;
+
 class WorkerReservasApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    void applicationClass_deveExistir() {
+        assertThat(WorkerReservasApplication.class).isNotNull();
+    }
 }
